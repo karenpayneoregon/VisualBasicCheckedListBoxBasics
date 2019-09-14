@@ -20,7 +20,7 @@ Public Class Form1
         MonthsCheckedListBox.SelectedIndex = Now.Month - 1
         MonthsCheckedListBox.SetItemCheckState(MonthsCheckedListBox.SelectedIndex, CheckState.Checked)
 
-        MonthsListBox.DataSource = MonthsCheckedListBox.CheckedList()
+        MonthsListBox.DataSource = MonthsCheckedListBox.CheckedStringList()
 
     End Sub
     Private Sub GetCheckedProductsButton_Click(sender As Object, e As EventArgs) Handles GetCheckedProductsButton.Click
@@ -32,7 +32,7 @@ Public Class Form1
     End Sub
 
     Private Sub CheckedMonthsButton_Click(sender As Object, e As EventArgs) Handles CheckedMonthsButton.Click
-        MonthsListBox.DataSource = MonthsCheckedListBox.CheckedList()
+        MonthsListBox.DataSource = MonthsCheckedListBox.CheckedStringList()
     End Sub
     ''' <summary>
     ''' Taken from https://docs.microsoft.com/en-us/dotnet/framework/winforms/controls/how-to-determine-checked-items-in-the-windows-forms-checkedlistbox-control

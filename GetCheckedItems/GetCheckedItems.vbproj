@@ -78,6 +78,7 @@
   <ItemGroup>
     <Compile Include="DataClasses\Product.vb" />
     <Compile Include="DataClasses\SqlServerOperations.vb" />
+    <Compile Include="Extensions\CheckedItemList.vb" />
     <Compile Include="Extensions\ExtensionMethods.vb" />
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
