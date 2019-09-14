@@ -30,6 +30,7 @@ Partial Class Form1
         Me.MonthsListBox = New System.Windows.Forms.ListBox()
         Me.CheckedMonthsButton = New System.Windows.Forms.Button()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.StandardMethodCheckBox = New System.Windows.Forms.CheckBox()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.SuspendLayout()
@@ -61,6 +62,7 @@ Partial Class Form1
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.StandardMethodCheckBox)
         Me.GroupBox1.Controls.Add(Me.ProductsListBox)
         Me.GroupBox1.Controls.Add(Me.GetCheckedProductsButton)
         Me.GroupBox1.Controls.Add(Me.CheckedListBox1)
@@ -108,6 +110,16 @@ Partial Class Form1
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "List(Of String)"
         '
+        'StandardMethodCheckBox
+        '
+        Me.StandardMethodCheckBox.AutoSize = True
+        Me.StandardMethodCheckBox.Location = New System.Drawing.Point(242, 295)
+        Me.StandardMethodCheckBox.Name = "StandardMethodCheckBox"
+        Me.StandardMethodCheckBox.Size = New System.Drawing.Size(127, 17)
+        Me.StandardMethodCheckBox.TabIndex = 5
+        Me.StandardMethodCheckBox.Text = "Use standard method"
+        Me.StandardMethodCheckBox.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -120,6 +132,7 @@ Partial Class Form1
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Get Checked Items"
         Me.GroupBox1.ResumeLayout(False)
+        Me.GroupBox1.PerformLayout()
         Me.GroupBox2.ResumeLayout(False)
         Me.ResumeLayout(False)
 
@@ -133,4 +146,5 @@ Partial Class Form1
     Friend WithEvents MonthsListBox As ListBox
     Friend WithEvents CheckedMonthsButton As Button
     Friend WithEvents GroupBox2 As GroupBox
+    Friend WithEvents StandardMethodCheckBox As CheckBox
 End Class
