@@ -7,9 +7,26 @@ Public Class Form1
 
         Dim products = operations.ProductsByCategoryIdentifier(1)
         CheckedListBox1.DataSource = products
+
+
+        MonthsCheckedListBox.Items.AddRange(
+            (
+               From month In Globalization.CultureInfo.CurrentCulture.DateTimeFormat.MonthNames
+               Where Not String.IsNullOrEmpty(month)).ToArray
+            )
+
+        ' check current month
+        MonthsCheckedListBox.SelectedIndex = Now.Month - 1
+        MonthsCheckedListBox.SetItemCheckState(MonthsCheckedListBox.SelectedIndex, CheckState.Checked)
+
+        MonthsListBox.DataSource = MonthsCheckedListBox.CheckedList()
+
+    End Sub
+    Private Sub GetCheckedProductsButton_Click(sender As Object, e As EventArgs) Handles GetCheckedProductsButton.Click
+        ProductsListBox.DataSource = CheckedListBox1.CheckedProductList()
     End Sub
 
-    Private Sub GetCheckedItemsButton_Click(sender As Object, e As EventArgs) Handles GetCheckedItemsButton.Click
-        ListBox1.DataSource = CheckedListBox1.CheckedList()
+    Private Sub CheckedMonthsButton_Click(sender As Object, e As EventArgs) Handles CheckedMonthsButton.Click
+        MonthsListBox.DataSource = MonthsCheckedListBox.CheckedList()
     End Sub
 End Class
