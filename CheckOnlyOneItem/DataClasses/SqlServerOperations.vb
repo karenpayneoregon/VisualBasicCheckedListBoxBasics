@@ -37,7 +37,12 @@ Namespace DataClasses
                         Dim reader = cmd.ExecuteReader()
 
                         While reader.Read()
-                            productList.Add(New Product() With {.ProductID = reader.GetInt32(0), .ProductName = reader.GetString(1), .Discontinued = reader.GetBoolean(8)})
+                            productList.Add(New Product() With
+                               {
+                                   .ProductID = reader.GetInt32(0),
+                                   .ProductName = reader.GetString(1),
+                                   .Discontinued = reader.GetBoolean(8)
+                               })
                         End While
 
                     Catch ex As Exception

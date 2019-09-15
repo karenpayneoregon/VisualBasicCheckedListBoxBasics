@@ -5,7 +5,6 @@ Public Class Form1
         Dim products = operations.ProductsByCategoryIdentifier(1)
         CheckedListBox1.DataSource = products
     End Sub
-
     Private Sub CheckedListBox1_ItemCheck(sender As Object, e As ItemCheckEventArgs) Handles CheckedListBox1.ItemCheck
         If e.NewValue = CheckState.Checked Then
             For index As Integer = 0 To CheckedListBox1.Items.Count - 1

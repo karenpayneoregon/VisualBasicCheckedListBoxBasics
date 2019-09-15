@@ -26,11 +26,11 @@ Partial Class Form1
         Me.GetCheckedProductsButton = New System.Windows.Forms.Button()
         Me.ProductsListBox = New System.Windows.Forms.ListBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.StandardMethodCheckBox = New System.Windows.Forms.CheckBox()
         Me.MonthsCheckedListBox = New System.Windows.Forms.CheckedListBox()
         Me.MonthsListBox = New System.Windows.Forms.ListBox()
         Me.CheckedMonthsButton = New System.Windows.Forms.Button()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.StandardMethodCheckBox = New System.Windows.Forms.CheckBox()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.SuspendLayout()
@@ -40,7 +40,7 @@ Partial Class Form1
         Me.CheckedListBox1.FormattingEnabled = True
         Me.CheckedListBox1.Location = New System.Drawing.Point(10, 20)
         Me.CheckedListBox1.Name = "CheckedListBox1"
-        Me.CheckedListBox1.Size = New System.Drawing.Size(223, 259)
+        Me.CheckedListBox1.Size = New System.Drawing.Size(174, 259)
         Me.CheckedListBox1.TabIndex = 0
         '
         'GetCheckedProductsButton
@@ -55,7 +55,7 @@ Partial Class Form1
         'ProductsListBox
         '
         Me.ProductsListBox.FormattingEnabled = True
-        Me.ProductsListBox.Location = New System.Drawing.Point(242, 20)
+        Me.ProductsListBox.Location = New System.Drawing.Point(190, 21)
         Me.ProductsListBox.Name = "ProductsListBox"
         Me.ProductsListBox.Size = New System.Drawing.Size(200, 251)
         Me.ProductsListBox.TabIndex = 2
@@ -68,10 +68,20 @@ Partial Class Form1
         Me.GroupBox1.Controls.Add(Me.CheckedListBox1)
         Me.GroupBox1.Location = New System.Drawing.Point(2, 4)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(473, 330)
+        Me.GroupBox1.Size = New System.Drawing.Size(412, 330)
         Me.GroupBox1.TabIndex = 3
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Using List(Of Product)"
+        '
+        'StandardMethodCheckBox
+        '
+        Me.StandardMethodCheckBox.AutoSize = True
+        Me.StandardMethodCheckBox.Location = New System.Drawing.Point(242, 295)
+        Me.StandardMethodCheckBox.Name = "StandardMethodCheckBox"
+        Me.StandardMethodCheckBox.Size = New System.Drawing.Size(127, 17)
+        Me.StandardMethodCheckBox.TabIndex = 5
+        Me.StandardMethodCheckBox.Text = "Use standard method"
+        Me.StandardMethodCheckBox.UseVisualStyleBackColor = True
         '
         'MonthsCheckedListBox
         '
@@ -103,28 +113,18 @@ Partial Class Form1
         Me.GroupBox2.Controls.Add(Me.CheckedMonthsButton)
         Me.GroupBox2.Controls.Add(Me.MonthsListBox)
         Me.GroupBox2.Controls.Add(Me.MonthsCheckedListBox)
-        Me.GroupBox2.Location = New System.Drawing.Point(504, 4)
+        Me.GroupBox2.Location = New System.Drawing.Point(423, 4)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(391, 330)
         Me.GroupBox2.TabIndex = 5
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "List(Of String)"
         '
-        'StandardMethodCheckBox
-        '
-        Me.StandardMethodCheckBox.AutoSize = True
-        Me.StandardMethodCheckBox.Location = New System.Drawing.Point(242, 295)
-        Me.StandardMethodCheckBox.Name = "StandardMethodCheckBox"
-        Me.StandardMethodCheckBox.Size = New System.Drawing.Size(127, 17)
-        Me.StandardMethodCheckBox.TabIndex = 5
-        Me.StandardMethodCheckBox.Text = "Use standard method"
-        Me.StandardMethodCheckBox.UseVisualStyleBackColor = True
-        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(916, 362)
+        Me.ClientSize = New System.Drawing.Size(828, 344)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow

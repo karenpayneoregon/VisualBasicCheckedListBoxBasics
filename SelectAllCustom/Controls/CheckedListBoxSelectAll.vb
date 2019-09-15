@@ -34,7 +34,7 @@
                     End If
                 Next
 
-                Return counter > 0
+                Return counter = Items.Count
 
             End Get
         End Property

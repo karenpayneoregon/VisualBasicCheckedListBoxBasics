@@ -78,6 +78,7 @@
   <ItemGroup>
     <Compile Include="DataClasses\Product.vb" />
     <Compile Include="DataClasses\SqlServerOperations.vb" />
+    <Compile Include="Extensions\Extensions.vb" />
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -126,8 +127,6 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Extensions\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

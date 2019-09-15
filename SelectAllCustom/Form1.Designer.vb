@@ -50,7 +50,7 @@ Partial Class Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(499, 306)
+        Me.ClientSize = New System.Drawing.Size(236, 283)
         Me.Controls.Add(Me.AllCheckedButton)
         Me.Controls.Add(Me.MonthsCheckedListBox)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow

@@ -1,4 +1,5 @@
 ﻿Imports TrackingCheckedItems.DataClasses
+Imports TrackingCheckedItems.Extensions
 
 Public Class Form1
     Private operations As SqlServerOperations = New SqlServerOperations()
@@ -22,5 +23,17 @@ Public Class Form1
         TextBox1.Text = String.Join(Environment.NewLine, CType(CheckedListBox1.DataSource, List(Of Product)).
                                        Where(Function(product) product.Selected).
                                        Select(Function(product) product.DisplayData).ToArray())
+    End Sub
+
+    Private Sub GetCheckedProductsButton_Click(sender As Object, e As EventArgs) Handles GetCheckedProductsButton.Click
+        Dim productItems = CheckedListBox1.CheckedIndices
+
+        For index As Integer = 0 To productItems.Count - 1
+            Dim product = CType(CheckedListBox1.Items(index), Product)
+            Console.WriteLine(product)
+        Next
+
+
+
     End Sub
 End Class
