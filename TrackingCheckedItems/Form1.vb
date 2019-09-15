@@ -26,14 +26,11 @@ Public Class Form1
     End Sub
 
     Private Sub GetCheckedProductsButton_Click(sender As Object, e As EventArgs) Handles GetCheckedProductsButton.Click
-        Dim productItems = CheckedListBox1.CheckedIndices
+        Dim productIndexes = CheckedListBox1.CheckedIndices
 
-        For index As Integer = 0 To productItems.Count - 1
+        For index As Integer = 0 To productIndexes.Count - 1
             Dim product = CType(CheckedListBox1.Items(index), Product)
             Console.WriteLine(product)
         Next
-
-
-
     End Sub
 End Class

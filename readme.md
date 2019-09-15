@@ -4,6 +4,8 @@ This repository provides code samples for CheckedListBox using VB.NET to show se
 
 ![ss](assets/solution.jpg)
 
+See [article](https://social.technet.microsoft.com/wiki/contents/articles/53302.windows-forms-working-with-checkedlistbox-vb-net.aspx) on Microsoft TechNet Wiki.
+
 > Data is read from a SQL-Server database utilizing a NuGet package for managing connections and exception handling.
 
 ### Microsoft documentation
